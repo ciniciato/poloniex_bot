@@ -1,0 +1,140 @@
+body{
+	background:#2C3E50;
+	color:#FEFEFE!important;
+}
+
+table{
+	color:#FEFEFE!imporant;
+}
+
+table tr.odd td{
+	background: rgba(0,0,0,.1)!important;
+}
+
+table tr:hover td{
+	background: rgba(0,0,0,.2)!important;
+}
+
+#main{
+	width:950px;
+}
+
+#main table{
+	width: 100%;
+}
+
+#tbl_overview{
+	background:#D35400;
+}
+
+#orders>.buy, #orders>.sell{
+	width: 50%;
+	float: left;
+}
+
+#orders table{
+	background:none!important;
+}
+
+.buy{
+	background:#27AE60;
+}
+
+.sell{
+	background:#E74C3C;
+}
+
+input, select{
+	background: none;
+	border: 2px solid rgba(255,255,255,.7);
+	color:#FEFEFE;
+	border-radius: 5px;
+	line-height: 30px;
+	height: 30px;
+}
+
+#aux_trades{
+	display: inline-block;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#aux_trades table{
+	max-width:32.5%;
+	float:left;
+}
+
+#aux_trades #tbl_bids{
+	background:#27AE60;
+}
+
+#aux_trades #tbl_asks{
+	background:#E74C3C;
+}
+
+#aux_trades #tbl_trades{
+	background:none;
+}
+
+#aux_trades #tbl_trades .buy{
+	background:#E74C3C;
+}
+
+#aux_trades #tbl_trades .sell{
+	background:#27AE60;
+}
+
+#aux_arbitrage{
+	position: fixed;
+	right: 300px;
+	bottom:0;
+}
+
+#tbl_arbitrage{
+	background:#D35400;
+}
+
+.is_mine {
+	border-left:5px solid rgba(255,255,255,.5);
+}
+
+#stats{
+	position: fixed;
+	left:0;
+	bottom:0;
+}
+
+#stats .chart{
+	width: 620px;
+	height: 250px;
+	float: left;
+	display: inline-block;
+}
+
+#wall_chart{
+	position: relative;
+}
+
+#wall_chart>div{
+	width: 350px;
+	height: 250px;
+}
+
+#ask_chart{
+	position:absolute;
+	left: 220px;
+	top: 0;
+}	
+
+#rate_charts{
+	position: relative
+}
+
+#buy_scatter_rate_chart,
+#sell_scatter_rate_chart{
+	position:absolute;
+	left: 0;
+	top: 0;
+	opacity: .3;
+}
